@@ -1559,6 +1559,22 @@ footer .container {
   filter: drop-shadow(0 28px 28px #0008);
   animation: battery-float 5s ease-in-out infinite;
 }
+.hero-badge {
+  position: absolute;
+  z-index: 3;
+  padding: 8px 10px;
+  border: 1px solid #ffffff45;
+  border-radius: 999px;
+  background: #071a2ed9;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: .1em;
+  box-shadow: 0 8px 18px #0003;
+}
+.hero-badge-bike { left: 6%; bottom: 55px; }
+.hero-badge-car { left: 44%; bottom: 15px; background: var(--red); }
+.hero-badge-home { right: 3%; bottom: 70px; }
 .hero-spec {
   top: 30px;
   right: 0;
@@ -1674,6 +1690,7 @@ footer .container {
   .hero-art { min-height: 260px; }
   .hero-orbit { width: 250px; height: 250px; }
   .hero-battery-image { width: min(300px, 86%); max-height: 250px; }
+  .hero-badge { font-size: 8px; padding: 7px 8px; }
   .hero-spec { top: 8px; right: 2px; }
   .trust-grid { grid-template-columns: repeat(2, 1fr); padding: 12px 0; }
   .trust-item { border-right: 0; padding: 8px 4px; }
