@@ -21,7 +21,7 @@ body {
   background: var(--paper);
   color: var(--ink);
   font-family:
-    Inter,
+    "Plus Jakarta Sans",
     ui-sans-serif,
     system-ui,
     -apple-system,
@@ -146,6 +146,7 @@ h1 {
   line-height: 1.02;
   letter-spacing: -0.05em;
   margin: 19px 0 16px;
+  font-weight: 800;
 }
 .hero p {
   font-size: 17px;
@@ -377,6 +378,7 @@ h2 {
   margin: 9px 0 10px;
   color: var(--navy);
   letter-spacing: -0.03em;
+  font-weight: 800;
 }
 .section-head p {
   margin: 0;
