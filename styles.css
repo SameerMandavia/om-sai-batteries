@@ -1964,6 +1964,20 @@ footer {
   height: 28px;
 }
 
+.brand-battery-icon {
+  stroke: #fff;
+}
+
+.brand-battery-icon rect:last-of-type {
+  fill: #fff;
+  stroke: none;
+}
+
+.brand-battery-icon path {
+  fill: var(--red);
+  stroke: none;
+}
+
 .hero-title-break {
   display: none;
 }
