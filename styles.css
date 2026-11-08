@@ -74,14 +74,18 @@ header {
   letter-spacing: 0.02em;
 }
 .brandmark {
-  width: 46px;
+  width: 82px;
   height: 46px;
-  border-radius: 13px;
-  background: linear-gradient(145deg, var(--navy), var(--blue));
+  flex: 0 0 auto;
+  overflow: hidden;
   display: grid;
   place-items: center;
-  color: #fff;
-  font-size: 23px;
+}
+.brandmark-logo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 .brand small {
   display: block;
@@ -468,6 +472,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 8px;
   margin-top: 17px;
 }
@@ -604,14 +609,24 @@ footer .container {
   gap: 18px;
   padding: 25px 0;
 }
-.finance-icon {
-  width: 54px;
-  height: 54px;
+.finance-brand-lockup {
   display: grid;
   place-items: center;
-  border-radius: 15px;
-  background: #ffedd1;
-  color: #a95d00;
+  width: 238px;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #d7e0e8;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 8px 18px #073d7030;
+}
+.finance-brand-logo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.finance-brand-caption {
+  display: none;
 }
 .finance-banner h2 {
   margin: 3px 0 5px;
@@ -643,6 +658,22 @@ footer .container {
   font-size: 13px;
   line-height: 1.55;
 }
+.finance-promo {
+  display: grid;
+  gap: 2px;
+  margin-top: 12px;
+  padding: 10px 12px;
+  border-left: 3px solid #f5c451;
+  border-radius: 0 9px 9px 0;
+  background: #fff8e7;
+  color: #725116;
+  font-size: 12px;
+  line-height: 1.45;
+}
+.finance-promo strong {
+  color: #4d350c;
+  font-size: 13px;
+}
 .finance-points {
   display: flex;
   flex-wrap: wrap;
@@ -664,85 +695,6 @@ footer .container {
 }
 .finance-cta {
   white-space: nowrap;
-}
-.emi-calculator-section {
-  background: #fff;
-  border-bottom: 1px solid var(--line);
-}
-.emi-calculator-grid {
-  display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  gap: 30px;
-  align-items: center;
-  padding: 34px 0;
-}
-.emi-calculator-grid h2 {
-  margin: 4px 0 8px;
-  color: var(--navy);
-  font-size: clamp(22px, 2.8vw, 32px);
-}
-.emi-calculator-grid p {
-  margin: 0 0 12px;
-  max-width: 560px;
-  color: var(--muted);
-  line-height: 1.55;
-}
-.calculator-note {
-  display: block;
-  max-width: 560px;
-  color: #8a5b1a;
-  font-size: 12px;
-  line-height: 1.5;
-}
-.emi-calculator {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 13px;
-  padding: 22px;
-  background: #f6f9fc;
-  border: 1px solid var(--line);
-  border-radius: 18px;
-}
-.emi-calculator label {
-  display: grid;
-  gap: 6px;
-  color: var(--navy);
-  font-size: 12px;
-  font-weight: 800;
-}
-.emi-calculator input {
-  width: 100%;
-  box-sizing: border-box;
-  border: 1px solid #d7e0e8;
-  border-radius: 10px;
-  padding: 11px 12px;
-  background: #fff;
-  color: var(--ink);
-  font: inherit;
-  font-size: 13px;
-}
-.emi-calculator input:focus {
-  outline: 3px solid rgba(22, 128, 71, 0.14);
-  border-color: #168047;
-}
-.fixed-rate-field input {
-  border-color: #9bd9b2;
-  background: #e7f8ed;
-  color: #13713d;
-  font-weight: 900;
-}
-.emi-calculator .btn {
-  grid-column: 1 / -1;
-  justify-self: start;
-}
-.emi-result {
-  grid-column: 1 / -1;
-  padding: 13px;
-  border-radius: 10px;
-  background: #eaf7ef;
-  color: #166534;
-  font-size: 14px;
-  font-weight: 800;
 }
 .info-section {
   background: #f6f9fc;
@@ -786,8 +738,12 @@ footer .container {
 }
 .emi-product-link {
   display: inline-flex;
+  flex-basis: 100%;
   align-items: center;
+  justify-content: center;
   gap: 5px;
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
   color: #13713d;
   font-size: 12px;
   font-weight: 800;
@@ -917,17 +873,14 @@ footer .container {
   .finance-banner-inner {
     grid-template-columns: auto 1fr;
   }
+  .finance-brand-lockup {
+    width: 180px;
+  }
   .finance-cta {
     grid-column: 1 / -1;
     justify-self: start;
   }
   .enquiry-grid {
-    grid-template-columns: 1fr;
-  }
-  .emi-calculator-grid {
-    grid-template-columns: 1fr;
-  }
-  .emi-calculator {
     grid-template-columns: 1fr;
   }
   .info-grid {
@@ -2299,8 +2252,21 @@ footer {
 }
 
 .brand-battery-icon path {
-  fill: var(--red);
+  fill: #f5c451;
   stroke: none;
+}
+
+.brandmark {
+  width: 82px;
+  height: 46px;
+  background: transparent;
+  border: 0;
+}
+
+.brandmark-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .hero-title-break {
