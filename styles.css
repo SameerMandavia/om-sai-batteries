@@ -871,14 +871,36 @@ footer .container {
     padding: 43px 0 28px;
   }
   .finance-banner-inner {
-    grid-template-columns: auto 1fr;
+    grid-template-columns: minmax(0, 160px) minmax(0, 1fr);
+    gap: 16px;
+    padding: 22px 0 24px;
   }
   .finance-brand-lockup {
-    width: 180px;
+    width: 100%;
+    max-width: 160px;
+  }
+  .finance-banner h2 {
+    font-size: clamp(21px, 4.4vw, 25px);
+    line-height: 1.15;
+  }
+  .finance-banner p {
+    font-size: 13px;
+  }
+  .finance-points {
+    display: grid;
+    gap: 6px;
+  }
+  .language-switcher-top {
+    margin-top: 16px;
+    gap: 6px;
+  }
+  .language-switcher-top .language-btn {
+    padding: 7px 10px;
   }
   .finance-cta {
     grid-column: 1 / -1;
     justify-self: start;
+    margin-top: 2px;
   }
   .enquiry-grid {
     grid-template-columns: 1fr;
@@ -957,6 +979,24 @@ footer .container {
   }
   .contact {
     padding-bottom: 38px;
+  }
+}
+
+@media (max-width: 480px) {
+  .finance-banner-inner {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .finance-brand-lockup {
+    width: min(180px, 72vw);
+    max-width: none;
+  }
+  .finance-cta {
+    width: 100%;
+    justify-content: center;
+  }
+  .language-switcher-top {
+    margin-top: 14px;
   }
 }
 .btn,
