@@ -34,6 +34,120 @@ const translations = {
         namePlaceholder: 'तुमचे नाव', vehiclePlaceholder: 'उदाहरण: Maruti Swift 2018', batteryPlaceholder: 'ब्रँड, मॉडेल किंवा फोटोचे वर्णन', phonePlaceholder: 'तुमचा फोन नंबर'
     }
 };
+Object.assign(translations.en, {
+    financeKicker: 'BAJAJ FINANCE EMI OPTION', zeroInterestBadge: '0% INTEREST',
+    financeTitle: 'Buy your battery on 0% EMI',
+    financeCopy: 'Get a 0% interest EMI option through Bajaj Finance, subject to eligibility and approved terms. Ask about down payment, tenure, processing fee and monthly EMI.',
+    languagePreferenceLabel: 'Preferred language', callTimeLabel: 'Preferred call time', oldExchangeLabel: 'I want to ask about old-battery exchange',
+    conditionsKicker: 'BAJAJ FINANCE CONDITIONS', conditionsTitle: 'Before choosing 0% EMI',
+    conditionMinimum: 'Minimum purchase: Confirm the minimum amount with the shop or Bajaj Finance.',
+    conditionTenure: 'Tenure: Available tenure options will be confirmed at enquiry.',
+    conditionDocuments: 'Documents: Ask which documents are required for your application.',
+    conditionFee: 'Processing fee: Confirm whether any processing or other charges apply.',
+    conditionNote: '0% interest does not necessarily mean zero processing charges. Eligibility and final terms are subject to Bajaj Finance approval.',
+    serviceKicker: 'WARRANTY & SERVICE', serviceTitle: 'Ask about support with your battery',
+    serviceWarranty: 'Battery warranty: Warranty period and coverage depend on the brand and model.',
+    serviceInstall: 'Installation/replacement: Ask about installation or replacement support.',
+    serviceDelivery: 'Home delivery: Ask about delivery availability for your location.',
+    serviceExchange: 'Old-battery exchange: Ask whether your old battery can be exchanged.',
+    bringKicker: 'BEFORE YOU VISIT', bringTitle: 'What to bring',
+    bringVehicle: 'Vehicle registration details or vehicle make and model.',
+    bringPhoto: 'A clear photo of your existing battery.',
+    bringDocuments: 'Aadhaar/PAN or other documents requested by Bajaj Finance, if applying for EMI.',
+    navProducts: 'Products', navHow: 'How it works', navEnquire: 'Enquire', navContact: 'Contact',
+    catalogueKicker: 'BATTERY CATEGORIES', catalogueTitle: 'Find a battery for your needs',
+    catalogueCopy: 'Choose a category to send an enquiry. Share your vehicle or existing battery details so the shop can help check compatibility, availability and price.',
+    filterAll: 'All categories', filterCar: 'Car', filterTwoWheeler: 'Two-wheeler', filterInverter: 'Inverter & UPS', filterCommercial: 'Commercial',
+    carTitle: 'Car Batteries', carCopy: 'Enquire about Amaron options for your car. Share the make, model and year for a compatibility check.',
+    twoWheelerTitle: 'Two-Wheeler Batteries', twoWheelerCopy: 'Ask about options for your motorcycle or scooter. Share the vehicle make and model.',
+    inverterTitle: 'Inverter Batteries', inverterCopy: 'Tell us your inverter details and backup requirement to enquire about suitable options.',
+    upsTitle: 'UPS & Backup Batteries', upsCopy: 'Enquire about backup battery requirements for your UPS or equipment.',
+    commercialTitle: 'Commercial Vehicle Batteries', commercialCopy: 'Contact us with your goods vehicle or commercial application details for an enquiry.',
+    replacementTitle: 'Battery Replacement Help', replacementCopy: 'Not sure which battery fits? Send your old battery details or vehicle information for guidance.',
+    calculatorKicker: 'EMI ESTIMATE', calculatorTitle: 'Calculate an estimated monthly EMI',
+    calculatorCopy: 'Enter the battery price and the terms shared by Bajaj Finance to get an indicative estimate.',
+    calculatorNote: 'This is only an estimate. Final interest, fees, down payment, tenure and approval are confirmed by Bajaj Finance.',
+    priceLabel: 'Battery price (₹)', downPaymentLabel: 'Down payment (₹)', rateLabel: 'Annual interest rate (%)', tenureLabel: 'Tenure (months)',
+    calculatorCopy: 'Enter the battery price, down payment and tenure to get an indicative estimate at 0% annual interest.',
+    calculatorNote: 'This estimate assumes 0% annual interest. Any processing fee, eligibility, tenure and final terms must be confirmed with Bajaj Finance.',
+    rateLabel: 'Annual interest rate (fixed at 0%)',
+    calculateCta: 'Calculate EMI', calculatorResult: 'Enter the terms to see an estimate.',
+    confirmEnquiry: 'Confirm on enquiry', personalAssistance: 'Personal assistance', askWhatsapp: 'Ask on WhatsApp'
+});
+Object.assign(translations.hi, {
+    financeKicker: 'BAJAJ FINANCE EMI विकल्प', zeroInterestBadge: '0% ब्याज',
+    financeTitle: 'अपनी बैटरी 0% EMI पर खरीदें',
+    financeCopy: 'Bajaj Finance के माध्यम से 0% ब्याज EMI विकल्प पाएं, पात्रता और स्वीकृत शर्तों के अधीन। डाउन पेमेंट, अवधि, प्रोसेसिंग शुल्क और मासिक EMI के बारे में पूछें।',
+    languagePreferenceLabel: 'पसंदीदा भाषा', callTimeLabel: 'पसंदीदा कॉल समय', oldExchangeLabel: 'पुरानी बैटरी बदलने के बारे में पूछना है',
+    conditionsKicker: 'BAJAJ FINANCE की शर्तें', conditionsTitle: '0% EMI चुनने से पहले',
+    conditionMinimum: 'न्यूनतम खरीद: दुकान या Bajaj Finance से न्यूनतम राशि की पुष्टि करें।',
+    conditionTenure: 'अवधि: उपलब्ध अवधि की पुष्टि पूछताछ के समय की जाएगी।',
+    conditionDocuments: 'दस्तावेज़: अपने आवेदन के लिए आवश्यक दस्तावेज़ पूछें।',
+    conditionFee: 'प्रोसेसिंग शुल्क: किसी भी प्रोसेसिंग या अन्य शुल्क की पुष्टि करें।',
+    conditionNote: '0% ब्याज का मतलब हमेशा शून्य प्रोसेसिंग शुल्क नहीं होता। पात्रता और अंतिम शर्तें Bajaj Finance की स्वीकृति के अधीन हैं।',
+    serviceKicker: 'वारंटी और सेवा', serviceTitle: 'अपनी बैटरी के लिए सहायता के बारे में पूछें',
+    serviceWarranty: 'बैटरी वारंटी: वारंटी अवधि और कवरेज ब्रांड और मॉडल पर निर्भर करते हैं।',
+    serviceInstall: 'इंस्टॉलेशन/बदलाव: इंस्टॉलेशन या बैटरी बदलने की सहायता के बारे में पूछें।',
+    serviceDelivery: 'होम डिलीवरी: अपने क्षेत्र के लिए डिलीवरी उपलब्धता पूछें।',
+    serviceExchange: 'पुरानी बैटरी एक्सचेंज: पूछें कि आपकी पुरानी बैटरी बदली जा सकती है या नहीं।',
+    bringKicker: 'आने से पहले', bringTitle: 'क्या साथ लाएं',
+    bringVehicle: 'वाहन के रजिस्ट्रेशन विवरण या वाहन का मेक और मॉडल।',
+    bringPhoto: 'अपनी मौजूदा बैटरी की साफ फोटो।',
+    bringDocuments: 'EMI के लिए आवेदन करने पर Aadhaar/PAN या Bajaj Finance द्वारा मांगे गए अन्य दस्तावेज़।',
+    navProducts: 'उत्पाद', navHow: 'कैसे काम करता है', navEnquire: 'पूछताछ', navContact: 'संपर्क',
+    catalogueKicker: 'बैटरी श्रेणियां', catalogueTitle: 'अपनी जरूरत के लिए बैटरी खोजें',
+    catalogueCopy: 'पूछताछ भेजने के लिए श्रेणी चुनें। वाहन या पुरानी बैटरी की जानकारी साझा करें ताकि दुकान अनुकूलता, उपलब्धता और कीमत जांच सके।',
+    filterAll: 'सभी श्रेणियां', filterCar: 'कार', filterTwoWheeler: 'दो-पहिया', filterInverter: 'इन्वर्टर और UPS', filterCommercial: 'वाणिज्यिक',
+    carTitle: 'कार बैटरियां', carCopy: 'अपनी कार के लिए Amaron विकल्पों के बारे में पूछें। अनुकूलता जांच के लिए मेक, मॉडल और वर्ष साझा करें।',
+    twoWheelerTitle: 'दो-पहिया बैटरियां', twoWheelerCopy: 'मोटरसाइकिल या स्कूटर के विकल्पों के बारे में पूछें। वाहन का मेक और मॉडल साझा करें।',
+    inverterTitle: 'इन्वर्टर बैटरियां', inverterCopy: 'उपयुक्त विकल्पों के लिए अपने इन्वर्टर की जानकारी और बैकअप आवश्यकता बताएं।',
+    upsTitle: 'UPS और बैकअप बैटरियां', upsCopy: 'अपने UPS या उपकरण के लिए बैकअप बैटरी की आवश्यकता के बारे में पूछें।',
+    commercialTitle: 'वाणिज्यिक वाहन बैटरियां', commercialCopy: 'पूछताछ के लिए अपने मालवाहक वाहन या व्यावसायिक उपयोग की जानकारी भेजें।',
+    replacementTitle: 'बैटरी बदलने में सहायता', replacementCopy: 'कौन-सी बैटरी सही है, पता नहीं? पुरानी बैटरी या वाहन की जानकारी भेजें।',
+    calculatorKicker: 'EMI अनुमान', calculatorTitle: 'अनुमानित मासिक EMI की गणना करें',
+    calculatorCopy: 'अनुमान के लिए बैटरी की कीमत और Bajaj Finance द्वारा बताई गई शर्तें भरें।',
+    calculatorNote: 'यह केवल अनुमान है। अंतिम ब्याज, शुल्क, डाउन पेमेंट, अवधि और स्वीकृति Bajaj Finance तय करेगा।',
+    priceLabel: 'बैटरी की कीमत (₹)', downPaymentLabel: 'डाउन पेमेंट (₹)', rateLabel: 'वार्षिक ब्याज दर (%)', tenureLabel: 'अवधि (महीने)',
+    calculateCta: 'EMI की गणना करें', calculatorResult: 'अनुमान देखने के लिए शर्तें भरें।',
+    confirmEnquiry: 'पूछताछ पर पुष्टि', personalAssistance: 'व्यक्तिगत सहायता', askWhatsapp: 'WhatsApp पर पूछें'
+});
+Object.assign(translations.mr, {
+    financeKicker: 'BAJAJ FINANCE EMI पर्याय', zeroInterestBadge: '0% व्याज',
+    financeTitle: 'तुमची बॅटरी 0% EMI वर खरेदी करा',
+    financeCopy: 'Bajaj Finance मार्फत 0% व्याज EMI पर्याय मिळवा, पात्रता आणि मंजूर अटींच्या अधीन. डाउन पेमेंट, कालावधी, प्रोसेसिंग फी आणि मासिक EMI बद्दल विचारा.',
+    languagePreferenceLabel: 'पसंतीची भाषा', callTimeLabel: 'पसंतीची कॉल वेळ', oldExchangeLabel: 'जुनी बॅटरी एक्सचेंज बद्दल विचारायचे आहे',
+    conditionsKicker: 'BAJAJ FINANCE च्या अटी', conditionsTitle: '0% EMI निवडण्यापूर्वी',
+    conditionMinimum: 'किमान खरेदी: दुकान किंवा Bajaj Finance कडून किमान रकमेची खात्री करा.',
+    conditionTenure: 'कालावधी: उपलब्ध कालावधीची माहिती चौकशीच्या वेळी दिली जाईल.',
+    conditionDocuments: 'कागदपत्रे: अर्जासाठी कोणती कागदपत्रे आवश्यक आहेत ते विचारा.',
+    conditionFee: 'प्रोसेसिंग फी: प्रोसेसिंग किंवा इतर शुल्क लागू आहे का ते तपासा.',
+    conditionNote: '0% व्याज म्हणजे नेहमी शून्य प्रोसेसिंग शुल्क असेलच असे नाही. पात्रता आणि अंतिम अटी Bajaj Finance च्या मंजुरीवर अवलंबून आहेत.',
+    serviceKicker: 'वॉरंटी आणि सेवा', serviceTitle: 'तुमच्या बॅटरीसाठी मदतीबद्दल विचारा',
+    serviceWarranty: 'बॅटरी वॉरंटी: वॉरंटीचा कालावधी आणि कव्हरेज ब्रँड व मॉडेलवर अवलंबून असते.',
+    serviceInstall: 'इन्स्टॉलेशन/बदल: इन्स्टॉलेशन किंवा बॅटरी बदलण्याच्या मदतीबद्दल विचारा.',
+    serviceDelivery: 'घरपोच सेवा: तुमच्या परिसरात डिलिव्हरी उपलब्ध आहे का ते विचारा.',
+    serviceExchange: 'जुनी बॅटरी एक्सचेंज: तुमची जुनी बॅटरी बदलता येईल का ते विचारा.',
+    bringKicker: 'भेट देण्यापूर्वी', bringTitle: 'काय सोबत आणावे',
+    bringVehicle: 'वाहनाचे रजिस्ट्रेशन तपशील किंवा वाहनाचा मेक आणि मॉडेल.',
+    bringPhoto: 'तुमच्या सध्याच्या बॅटरीचा स्पष्ट फोटो.',
+    bringDocuments: 'EMI साठी अर्ज करत असल्यास Aadhaar/PAN किंवा Bajaj Finance ने मागितलेली इतर कागदपत्रे.',
+    navProducts: 'उत्पादने', navHow: 'कसे काम करते', navEnquire: 'चौकशी', navContact: 'संपर्क',
+    catalogueKicker: 'बॅटरी श्रेणी', catalogueTitle: 'तुमच्या गरजेसाठी बॅटरी शोधा',
+    catalogueCopy: 'चौकशी पाठवण्यासाठी श्रेणी निवडा. वाहन किंवा जुन्या बॅटरीची माहिती शेअर करा, म्हणजे दुकान अनुकूलता, उपलब्धता आणि किंमत तपासू शकेल.',
+    filterAll: 'सर्व श्रेणी', filterCar: 'कार', filterTwoWheeler: 'दुचाकी', filterInverter: 'इन्व्हर्टर आणि UPS', filterCommercial: 'व्यावसायिक',
+    carTitle: 'कार बॅटरी', carCopy: 'तुमच्या कारसाठी Amaron पर्यायांबद्दल विचारा. अनुकूलता तपासण्यासाठी मेक, मॉडेल आणि वर्ष शेअर करा.',
+    twoWheelerTitle: 'दुचाकी बॅटरी', twoWheelerCopy: 'मोटरसायकल किंवा स्कूटरसाठी पर्यायांबद्दल विचारा. वाहनाचा मेक आणि मॉडेल शेअर करा.',
+    inverterTitle: 'इन्व्हर्टर बॅटरी', inverterCopy: 'योग्य पर्यायांसाठी तुमच्या इन्व्हर्टरची माहिती आणि बॅकअपची गरज सांगा.',
+    upsTitle: 'UPS आणि बॅकअप बॅटरी', upsCopy: 'तुमच्या UPS किंवा उपकरणासाठी बॅकअप बॅटरीच्या गरजेबद्दल विचारा.',
+    commercialTitle: 'व्यावसायिक वाहन बॅटरी', commercialCopy: 'चौकशीसाठी तुमच्या मालवाहू वाहनाची किंवा व्यावसायिक वापराची माहिती पाठवा.',
+    replacementTitle: 'बॅटरी बदलण्यास मदत', replacementCopy: 'कोणती बॅटरी योग्य आहे हे कळत नाही? जुन्या बॅटरीची किंवा वाहनाची माहिती पाठवा.',
+    calculatorKicker: 'EMI अंदाज', calculatorTitle: 'अंदाजे मासिक EMI मोजा',
+    calculatorCopy: 'अंदाजासाठी बॅटरीची किंमत आणि Bajaj Finance ने सांगितलेल्या अटी भरा.',
+    calculatorNote: 'हा फक्त अंदाज आहे. अंतिम व्याज, शुल्क, डाउन पेमेंट, कालावधी आणि मंजुरी Bajaj Finance ठरवेल.',
+    priceLabel: 'बॅटरीची किंमत (₹)', downPaymentLabel: 'डाउन पेमेंट (₹)', rateLabel: 'वार्षिक व्याजदर (%)', tenureLabel: 'कालावधी (महिने)',
+    calculateCta: 'EMI मोजा', calculatorResult: 'अंदाज पाहण्यासाठी अटी भरा.',
+    confirmEnquiry: 'चौकशीवर खात्री', personalAssistance: 'वैयक्तिक मदत', askWhatsapp: 'WhatsApp वर विचारा'
+});
 const setLanguage = (language) => {
     const copy = translations[language] || translations.en;
     document.querySelectorAll('[data-i18n]').forEach((element) => {
@@ -44,6 +158,17 @@ const setLanguage = (language) => {
         const key = element.dataset.placeholder;
         if (copy[key]) element.placeholder = copy[key];
     });
+    document.querySelectorAll('.avail').forEach((element) => {
+        element.textContent = element.classList.contains('personal') ? copy.personalAssistance : copy.confirmEnquiry;
+    });
+    document.querySelectorAll('.ask').forEach((element) => {
+        const icon = element.querySelector('svg');
+        element.textContent = '';
+        if (icon) element.appendChild(icon);
+        const label = document.createElement('span');
+        label.textContent = copy.askWhatsapp;
+        element.appendChild(label);
+    });
     document.querySelectorAll('.language-btn').forEach((button) => button.classList.toggle('active', button.dataset.language === language));
     document.documentElement.lang = language === 'hi' ? 'hi' : language === 'mr' ? 'mr' : 'en';
 };
@@ -53,8 +178,28 @@ if (enquiryForm) enquiryForm.addEventListener('submit', (event) => {
     event.preventDefault();
     const data = new FormData(enquiryForm);
     const emi = data.get('emi') ? 'Yes' : 'No';
-    const message = `Hello Om Sai Batteries, I want to enquire about a battery.%0A%0AName: ${encodeURIComponent(data.get('name'))}%0AVehicle: ${encodeURIComponent(data.get('vehicle') || 'Not provided')}%0AExisting battery: ${encodeURIComponent(data.get('battery') || 'Not provided')}%0APhone: ${encodeURIComponent(data.get('phone'))}%0AEMI through Bajaj Finance: ${emi}`;
+    const oldExchange = data.get('oldExchange') ? 'Yes' : 'No';
+    const message = `Hello Om Sai Batteries, I want to enquire about a battery.%0A%0AName: ${encodeURIComponent(data.get('name'))}%0AVehicle: ${encodeURIComponent(data.get('vehicle') || 'Not provided')}%0AExisting battery: ${encodeURIComponent(data.get('battery') || 'Not provided')}%0APhone: ${encodeURIComponent(data.get('phone'))}%0APreferred language: ${encodeURIComponent(data.get('preferredLanguage'))}%0APreferred call time: ${encodeURIComponent(data.get('callTime'))}%0AEMI through Bajaj Finance: ${emi}%0AOld-battery exchange: ${oldExchange}`;
     window.open(`https://wa.me/919270801701?text=${message}`, '_blank', 'noopener');
+});
+const emiCalculator = document.getElementById('emi-calculator');
+if (emiCalculator) emiCalculator.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const price = Number(document.getElementById('emi-price').value);
+    const downPayment = Number(document.getElementById('emi-down-payment').value || 0);
+    const annualRate = 0;
+    const tenure = Number(document.getElementById('emi-tenure').value);
+    const principal = price - downPayment;
+    const result = document.getElementById('emi-result');
+    if (principal <= 0 || annualRate < 0 || tenure <= 0) {
+        result.textContent = 'Please enter valid EMI details.';
+        return;
+    }
+    const monthlyRate = annualRate / 1200;
+    const monthlyEmi = monthlyRate === 0
+        ? principal / tenure
+        : principal * monthlyRate * Math.pow(1 + monthlyRate, tenure) / (Math.pow(1 + monthlyRate, tenure) - 1);
+    result.textContent = 'Estimated monthly EMI: ₹' + monthlyEmi.toLocaleString('en-IN', { maximumFractionDigits: 0 });
 });
 const productIcons = ['car-front', 'bike', 'house', 'zap', 'truck', 'search'];
 document.querySelectorAll('.product .symbol').forEach((icon, index) => {
