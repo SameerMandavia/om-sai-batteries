@@ -35,7 +35,7 @@ const translations = {
     }
 };
 Object.assign(translations.en, {
-    financeKicker: 'BAJAJ FINANCE EMI OPTION', zeroInterestBadge: '0% INTEREST',
+    financeKicker: 'BAJAJ FINANCE EMI OPTION', zeroInterestBadge: '0% INTEREST EMI',
     financeTitle: 'Buy your battery on 0% EMI',
     financeCopy: 'Get a 0% interest EMI option through Bajaj Finance, subject to eligibility and approved terms. Ask about down payment, tenure, processing fee and monthly EMI.',
     languagePreferenceLabel: 'Preferred language', callTimeLabel: 'Preferred call time', oldExchangeLabel: 'I want to ask about old-battery exchange',
@@ -75,7 +75,7 @@ Object.assign(translations.en, {
     confirmEnquiry: 'Confirm on enquiry', personalAssistance: 'Personal assistance', askWhatsapp: 'Ask on WhatsApp'
 });
 Object.assign(translations.hi, {
-    financeKicker: 'BAJAJ FINANCE EMI विकल्प', zeroInterestBadge: '0% ब्याज',
+    financeKicker: 'BAJAJ FINANCE EMI विकल्प', zeroInterestBadge: '0% ब्याज EMI',
     financeTitle: 'अपनी बैटरी 0% EMI पर खरीदें',
     financeCopy: 'Bajaj Finance के माध्यम से 0% ब्याज EMI विकल्प पाएं, पात्रता और स्वीकृत शर्तों के अधीन। डाउन पेमेंट, अवधि, प्रोसेसिंग शुल्क और मासिक EMI के बारे में पूछें।',
     languagePreferenceLabel: 'पसंदीदा भाषा', callTimeLabel: 'पसंदीदा कॉल समय', oldExchangeLabel: 'पुरानी बैटरी बदलने के बारे में पूछना है',
@@ -112,7 +112,7 @@ Object.assign(translations.hi, {
     confirmEnquiry: 'पूछताछ पर पुष्टि', personalAssistance: 'व्यक्तिगत सहायता', askWhatsapp: 'WhatsApp पर पूछें'
 });
 Object.assign(translations.mr, {
-    financeKicker: 'BAJAJ FINANCE EMI पर्याय', zeroInterestBadge: '0% व्याज',
+    financeKicker: 'BAJAJ FINANCE EMI पर्याय', zeroInterestBadge: '0% व्याज EMI',
     financeTitle: 'तुमची बॅटरी 0% EMI वर खरेदी करा',
     financeCopy: 'Bajaj Finance मार्फत 0% व्याज EMI पर्याय मिळवा, पात्रता आणि मंजूर अटींच्या अधीन. डाउन पेमेंट, कालावधी, प्रोसेसिंग फी आणि मासिक EMI बद्दल विचारा.',
     languagePreferenceLabel: 'पसंतीची भाषा', callTimeLabel: 'पसंतीची कॉल वेळ', oldExchangeLabel: 'जुनी बॅटरी एक्सचेंज बद्दल विचारायचे आहे',
