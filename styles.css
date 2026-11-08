@@ -618,6 +618,24 @@ footer .container {
   color: var(--navy);
   font-size: clamp(20px, 2.4vw, 28px);
 }
+.zero-interest-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 9px;
+  padding: 7px 11px;
+  border: 1px solid #9bd9b2;
+  border-radius: 999px;
+  background: #e7f8ed;
+  color: #13713d;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+}
+.zero-interest-badge .icon {
+  width: 14px;
+  height: 14px;
+}
 .finance-banner p {
   margin: 0;
   max-width: 680px;
@@ -646,6 +664,141 @@ footer .container {
 }
 .finance-cta {
   white-space: nowrap;
+}
+.emi-calculator-section {
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+}
+.emi-calculator-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 30px;
+  align-items: center;
+  padding: 34px 0;
+}
+.emi-calculator-grid h2 {
+  margin: 4px 0 8px;
+  color: var(--navy);
+  font-size: clamp(22px, 2.8vw, 32px);
+}
+.emi-calculator-grid p {
+  margin: 0 0 12px;
+  max-width: 560px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+.calculator-note {
+  display: block;
+  max-width: 560px;
+  color: #8a5b1a;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.emi-calculator {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 13px;
+  padding: 22px;
+  background: #f6f9fc;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+}
+.emi-calculator label {
+  display: grid;
+  gap: 6px;
+  color: var(--navy);
+  font-size: 12px;
+  font-weight: 800;
+}
+.emi-calculator input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #d7e0e8;
+  border-radius: 10px;
+  padding: 11px 12px;
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+  font-size: 13px;
+}
+.emi-calculator input:focus {
+  outline: 3px solid rgba(22, 128, 71, 0.14);
+  border-color: #168047;
+}
+.fixed-rate-field input {
+  border-color: #9bd9b2;
+  background: #e7f8ed;
+  color: #13713d;
+  font-weight: 900;
+}
+.emi-calculator .btn {
+  grid-column: 1 / -1;
+  justify-self: start;
+}
+.emi-result {
+  grid-column: 1 / -1;
+  padding: 13px;
+  border-radius: 10px;
+  background: #eaf7ef;
+  color: #166534;
+  font-size: 14px;
+  font-weight: 800;
+}
+.info-section {
+  background: #f6f9fc;
+  border-bottom: 1px solid var(--line);
+}
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 30px 0;
+}
+.info-card {
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #fff;
+}
+.info-card h3 {
+  margin: 5px 0 13px;
+  color: var(--navy);
+  font-size: 19px;
+}
+.info-card ul {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+.info-card li b {
+  color: var(--ink);
+}
+.info-card small {
+  display: block;
+  margin-top: 15px;
+  color: #8a5b1a;
+  font-size: 11px;
+  line-height: 1.5;
+}
+.emi-product-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #13713d;
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+}
+.emi-product-link:hover {
+  text-decoration: underline;
+}
+.emi-product-link .icon {
+  width: 14px;
+  height: 14px;
 }
 .gst-placeholder {
   color: #9a5b00;
@@ -709,7 +862,8 @@ footer .container {
   font-weight: 800;
 }
 .enquiry-form input:not([type="checkbox"]),
-.enquiry-form textarea {
+.enquiry-form textarea,
+.enquiry-form select {
   width: 100%;
   box-sizing: border-box;
   border: 1px solid #d7e0e8;
@@ -768,6 +922,15 @@ footer .container {
     justify-self: start;
   }
   .enquiry-grid {
+    grid-template-columns: 1fr;
+  }
+  .emi-calculator-grid {
+    grid-template-columns: 1fr;
+  }
+  .emi-calculator {
+    grid-template-columns: 1fr;
+  }
+  .info-grid {
     grid-template-columns: 1fr;
   }
   .hero-art {

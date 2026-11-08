@@ -75,8 +75,8 @@
           ><span>OM SAI BATTERIES<small>POWERING YOUR JOURNEY</small></span></a
         >
         <nav class="navlinks" aria-label="Main navigation">
-          <a href="#products">Products</a><a href="#help">How it works</a
-          ><a href="#enquiry">Enquire</a><a href="#contact">Contact</a>
+          <a href="#products" data-i18n="navProducts">Products</a><a href="#help" data-i18n="navHow">How it works</a
+          ><a href="#enquiry" data-i18n="navEnquire">Enquire</a><a href="#contact" data-i18n="navContact">Contact</a>
         </nav>
         <a
           class="navcta"
@@ -177,16 +177,75 @@
         <div class="container finance-banner-inner">
           <div class="finance-icon" aria-hidden="true"><i data-lucide="credit-card" class="icon"></i></div>
           <div>
-            <div class="kicker" data-i18n="financeKicker">EASY PAYMENT OPTION</div>
-            <h2 id="finance-title" data-i18n="financeTitle">Buy your battery on EMI</h2>
-            <p data-i18n="financeCopy">EMI is available through Bajaj Finance, subject to eligibility. Ask about down payment, tenure, processing fee and monthly EMI.</p>
+            <div class="kicker" data-i18n="financeKicker">BAJAJ FINANCE EMI OPTION</div>
+            <div class="zero-interest-badge"><i data-lucide="percent" class="icon"></i><span data-i18n="zeroInterestBadge">0% INTEREST</span></div>
+            <h2 id="finance-title" data-i18n="financeTitle">Buy your battery on 0% EMI</h2>
+            <p data-i18n="financeCopy">Get a 0% interest EMI option through Bajaj Finance, subject to eligibility and approved terms. Ask about down payment, tenure, processing fee and monthly EMI.</p>
             <div class="finance-points" aria-label="Bajaj Finance EMI details">
               <span><i data-lucide="check-circle-2" class="icon"></i><span data-i18n="financePoint1">Monthly instalments</span></span>
               <span><i data-lucide="check-circle-2" class="icon"></i><span data-i18n="financePoint2">Eligibility confirmation</span></span>
               <span><i data-lucide="check-circle-2" class="icon"></i><span data-i18n="financePoint3">Terms explained before purchase</span></span>
             </div>
+            <div class="language-switcher language-switcher-top" role="group" aria-label="Choose language">
+              <span data-i18n="languageLabel">Language</span>
+              <button type="button" class="language-btn active" data-language="en">English</button>
+              <button type="button" class="language-btn" data-language="hi">हिन्दी</button>
+              <button type="button" class="language-btn" data-language="mr">मराठी</button>
+            </div>
           </div>
           <a class="btn primary finance-cta" href="https://wa.me/919270801701?text=Hello%20Om%20Sai%20Batteries%2C%20I%20want%20to%20get%20an%20EMI%20estimate%20for%20a%20battery%20through%20Bajaj%20Finance." target="_blank" rel="noopener"><i data-lucide="message-circle" class="icon"></i><span data-i18n="emiCta">Get EMI estimate on WhatsApp</span></a>
+        </div>
+      </section>
+      <section class="emi-calculator-section" aria-labelledby="emi-calculator-title">
+        <div class="container emi-calculator-grid">
+          <div>
+            <div class="kicker" data-i18n="calculatorKicker">EMI ESTIMATE</div>
+            <h2 id="emi-calculator-title" data-i18n="calculatorTitle">Calculate an estimated monthly EMI</h2>
+            <p data-i18n="calculatorCopy">Enter the battery price, down payment and tenure to get an indicative estimate at 0% annual interest.</p>
+            <small class="calculator-note" data-i18n="calculatorNote">This estimate assumes 0% annual interest. Any processing fee, eligibility, tenure and final terms must be confirmed with Bajaj Finance.</small>
+          </div>
+          <form class="emi-calculator" id="emi-calculator">
+            <label><span data-i18n="priceLabel">Battery price (₹)</span><input id="emi-price" type="number" min="0" step="100" placeholder="Example: 12000" required /></label>
+            <label><span data-i18n="downPaymentLabel">Down payment (₹)</span><input id="emi-down-payment" type="number" min="0" step="100" value="0" /></label>
+            <label class="fixed-rate-field"><span data-i18n="rateLabel">Annual interest rate (fixed at 0%)</span><input id="emi-rate" type="number" min="0" step="0.1" value="0" readonly aria-readonly="true" /></label>
+            <label><span data-i18n="tenureLabel">Tenure (months)</span><input id="emi-tenure" type="number" min="1" step="1" value="12" required /></label>
+            <button class="btn primary" type="submit"><i data-lucide="calculator" class="icon"></i><span data-i18n="calculateCta">Calculate EMI</span></button>
+            <output class="emi-result" id="emi-result" aria-live="polite" data-i18n="calculatorResult">Enter the terms to see an estimate.</output>
+          </form>
+        </div>
+      </section>
+      <section class="info-section" aria-label="EMI conditions and service information">
+        <div class="container info-grid">
+          <article class="info-card">
+            <div class="kicker" data-i18n="conditionsKicker">BAJAJ FINANCE CONDITIONS</div>
+            <h3 data-i18n="conditionsTitle">Before choosing 0% EMI</h3>
+            <ul>
+              <li data-i18n="conditionMinimum">Minimum purchase: Confirm the minimum amount with the shop or Bajaj Finance.</li>
+              <li data-i18n="conditionTenure">Tenure: Available tenure options will be confirmed at enquiry.</li>
+              <li data-i18n="conditionDocuments">Documents: Ask which documents are required for your application.</li>
+              <li data-i18n="conditionFee">Processing fee: Confirm whether any processing or other charges apply.</li>
+            </ul>
+            <small data-i18n="conditionNote">0% interest does not necessarily mean zero processing charges. Eligibility and final terms are subject to Bajaj Finance approval.</small>
+          </article>
+          <article class="info-card">
+            <div class="kicker" data-i18n="serviceKicker">WARRANTY & SERVICE</div>
+            <h3 data-i18n="serviceTitle">Ask about support with your battery</h3>
+            <ul>
+              <li data-i18n="serviceWarranty">Battery warranty: Warranty period and coverage depend on the brand and model.</li>
+              <li data-i18n="serviceInstall">Installation/replacement: Ask about installation or replacement support.</li>
+              <li data-i18n="serviceDelivery">Home delivery: Ask about delivery availability for your location.</li>
+              <li data-i18n="serviceExchange">Old-battery exchange: Ask whether your old battery can be exchanged.</li>
+            </ul>
+          </article>
+          <article class="info-card bring-card">
+            <div class="kicker" data-i18n="bringKicker">BEFORE YOU VISIT</div>
+            <h3 data-i18n="bringTitle">What to bring</h3>
+            <ul>
+              <li data-i18n="bringVehicle">Vehicle registration details or vehicle make and model.</li>
+              <li data-i18n="bringPhoto">A clear photo of your existing battery.</li>
+              <li data-i18n="bringDocuments">Aadhaar/PAN or other documents requested by Bajaj Finance, if applying for EMI.</li>
+            </ul>
+          </article>
         </div>
       </section>
       <section class="brand-showcase" aria-labelledby="brands-title">
@@ -220,9 +279,9 @@
       <section class="content" id="products">
         <div class="container">
           <div class="section-head">
-            <div class="kicker">BATTERY CATEGORIES</div>
-            <h2>Find a battery for your needs</h2>
-            <p>
+            <div class="kicker" data-i18n="catalogueKicker">BATTERY CATEGORIES</div>
+            <h2 data-i18n="catalogueTitle">Find a battery for your needs</h2>
+            <p data-i18n="catalogueCopy">
               Choose a category to send an enquiry. Share your vehicle or
               existing battery details so the shop can help check compatibility,
               availability and price.
@@ -234,13 +293,13 @@
             aria-label="Filter product categories"
           >
             <button class="filter active" data-filter="all">
-              All categories</button
-            ><button class="filter" data-filter="car">Car</button
+              <span data-i18n="filterAll">All categories</span></button
+            ><button class="filter" data-filter="car"><span data-i18n="filterCar">Car</span></button
             ><button class="filter" data-filter="two-wheeler">
-              Two-wheeler</button
+              <span data-i18n="filterTwoWheeler">Two-wheeler</span></button
             ><button class="filter" data-filter="inverter">
-              Inverter & UPS</button
-            ><button class="filter" data-filter="commercial">Commercial</button>
+              <span data-i18n="filterInverter">Inverter & UPS</span></button
+            ><button class="filter" data-filter="commercial"><span data-i18n="filterCommercial">Commercial</span></button>
           </div>
           <div class="catalogue">
             <article class="product" data-category="car">
@@ -249,8 +308,8 @@
                 ><span class="symbol" aria-hidden="true"><i data-lucide="car-front" class="icon"></i></span>
               </div>
               <div class="product-body">
-                <h3>Car Batteries</h3>
-                <p>
+                <h3 data-i18n="carTitle">Car Batteries</h3>
+                <p data-i18n="carCopy">
                   Enquire about Amaron options for your car. Share the make,
                   model and year for a compatibility check.
                 </p>
@@ -263,6 +322,7 @@
                     rel="noopener"
                     ><svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.5" /><path d="M8.2 7.8c.3-.3.8-.3 1.1.1l1 1.5c.2.3.2.7-.1 1l-.7.7c.7 1.3 1.8 2.4 3.1 3.1l.7-.7c.3-.3.7-.3 1-.1l1.5 1c.4.3.4.8.1 1.1l-.5.5c-.5.5-1.2.7-1.9.5-3.5-1-6.3-3.8-7.3-7.3-.2-.7 0-1.4.5-1.9z" /></svg>Ask on WhatsApp</a
                   >
+                    <a class="emi-product-link" href="https://wa.me/919270801701?text=Hello%20Om%20Sai%20Batteries%2C%20I%20want%20to%20ask%20about%200%25%20EMI%20through%20Bajaj%20Finance%20for%20a%20car%20battery." target="_blank" rel="noopener"><i data-lucide="credit-card" class="icon"></i>Get EMI for car battery</a>
                 </div>
               </div>
             </article>
@@ -272,8 +332,8 @@
                 ><span class="symbol" aria-hidden="true"><i data-lucide="bike" class="icon"></i></span>
               </div>
               <div class="product-body">
-                <h3>Two-Wheeler Batteries</h3>
-                <p>
+                <h3 data-i18n="twoWheelerTitle">Two-Wheeler Batteries</h3>
+                <p data-i18n="twoWheelerCopy">
                   Ask about options for your motorcycle or scooter. Share the
                   vehicle make and model.
                 </p>
@@ -295,8 +355,8 @@
                 ><span class="symbol" aria-hidden="true"><i data-lucide="house" class="icon"></i></span>
               </div>
               <div class="product-body">
-                <h3>Inverter Batteries</h3>
-                <p>
+                <h3 data-i18n="inverterTitle">Inverter Batteries</h3>
+                <p data-i18n="inverterCopy">
                   Tell us your inverter details and backup requirement to
                   enquire about suitable options.
                 </p>
@@ -309,6 +369,7 @@
                     rel="noopener"
                     ><svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.5" /><path d="M8.2 7.8c.3-.3.8-.3 1.1.1l1 1.5c.2.3.2.7-.1 1l-.7.7c.7 1.3 1.8 2.4 3.1 3.1l.7-.7c.3-.3.7-.3 1-.1l1.5 1c.4.3.4.8.1 1.1l-.5.5c-.5.5-1.2.7-1.9.5-3.5-1-6.3-3.8-7.3-7.3-.2-.7 0-1.4.5-1.9z" /></svg>Ask on WhatsApp</a
                   >
+                    <a class="emi-product-link" href="https://wa.me/919270801701?text=Hello%20Om%20Sai%20Batteries%2C%20I%20want%20to%20ask%20about%200%25%20EMI%20through%20Bajaj%20Finance%20for%20an%20inverter%20battery." target="_blank" rel="noopener"><i data-lucide="credit-card" class="icon"></i>Get EMI for inverter battery</a>
                 </div>
               </div>
             </article>
@@ -318,8 +379,8 @@
                 ><span class="symbol" aria-hidden="true"><i data-lucide="battery-charging" class="icon"></i></span>
               </div>
               <div class="product-body">
-                <h3>UPS & Backup Batteries</h3>
-                <p>
+                <h3 data-i18n="upsTitle">UPS & Backup Batteries</h3>
+                <p data-i18n="upsCopy">
                   Enquire about backup battery requirements for your UPS or
                   equipment.
                 </p>
@@ -341,8 +402,8 @@
                 ><span class="symbol" aria-hidden="true"><i data-lucide="truck" class="icon"></i></span>
               </div>
               <div class="product-body">
-                <h3>Commercial Vehicle Batteries</h3>
-                <p>
+                <h3 data-i18n="commercialTitle">Commercial Vehicle Batteries</h3>
+                <p data-i18n="commercialCopy">
                   Contact us with your goods vehicle or commercial application
                   details for an enquiry.
                 </p>
@@ -364,13 +425,13 @@
                 ><span class="symbol" aria-hidden="true"><i data-lucide="search-check" class="icon"></i></span>
               </div>
               <div class="product-body">
-                <h3>Battery Replacement Help</h3>
-                <p>
+                <h3 data-i18n="replacementTitle">Battery Replacement Help</h3>
+                <p data-i18n="replacementCopy">
                   Not sure which battery fits? Send your old battery details or
                   vehicle information for guidance.
                 </p>
                 <div class="product-foot">
-                  <span class="avail">Personal assistance</span
+                  <span class="avail personal">Personal assistance</span
                   ><a
                     class="ask"
                     href="https://wa.me/919270801701?text=Please%20help%20me%20identify%20the%20right%20battery%20for%20my%20vehicle."
@@ -477,7 +538,10 @@
             <label><span data-i18n="vehicleLabel">Vehicle make and model</span><input name="vehicle" type="text" placeholder="Example: Maruti Swift 2018" data-placeholder="vehiclePlaceholder" /></label>
             <label><span data-i18n="batteryLabel">Existing battery details</span><textarea name="battery" rows="3" placeholder="Brand, model or a photo description" data-placeholder="batteryPlaceholder"></textarea></label>
             <label><span data-i18n="phoneLabel">Phone number</span><input name="phone" type="tel" autocomplete="tel" required placeholder="Your phone number" data-placeholder="phonePlaceholder" /></label>
+            <label><span data-i18n="languagePreferenceLabel">Preferred language</span><select name="preferredLanguage"><option value="English">English</option><option value="Hindi">Hindi</option><option value="Marathi">Marathi</option></select></label>
+            <label><span data-i18n="callTimeLabel">Preferred call time</span><select name="callTime"><option value="Any time">Any time</option><option value="Morning">Morning</option><option value="Afternoon">Afternoon</option><option value="Evening">Evening</option></select></label>
             <label class="form-checkbox"><input name="emi" type="checkbox" /><span data-i18n="emiNeedLabel">I want an EMI option through Bajaj Finance</span></label>
+            <label class="form-checkbox"><input name="oldExchange" type="checkbox" /><span data-i18n="oldExchangeLabel">I want to ask about old-battery exchange</span></label>
             <button class="btn primary" type="submit"><i data-lucide="send" class="icon"></i><span data-i18n="formCta">Send enquiry on WhatsApp</span></button>
             <small data-i18n="formNote">We’ll confirm availability, pricing, GST billing and EMI terms before purchase.</small>
           </form>
@@ -531,7 +595,7 @@
               <b>GST NUMBER</b><span class="gst-placeholder">GSTIN 27AIFPT8996B1ZN</span>
             </div>
             <div class="detail emi-detail">
-              <b>EMI AVAILABLE</b>Buy your battery through Bajaj Finance EMI, subject to eligibility and lender terms.
+              <b>EMI AVAILABLE</b>0% interest EMI through Bajaj Finance, subject to eligibility and approved terms.
             </div>
             <div class="detail hours-detail">
               <b>BUSINESS HOURS</b>
