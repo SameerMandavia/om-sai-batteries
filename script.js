@@ -64,14 +64,6 @@ Object.assign(translations.en, {
     upsTitle: 'UPS & Backup Batteries', upsCopy: 'Enquire about backup battery requirements for your UPS or equipment.',
     commercialTitle: 'Commercial Vehicle Batteries', commercialCopy: 'Contact us with your goods vehicle or commercial application details for an enquiry.',
     replacementTitle: 'Battery Replacement Help', replacementCopy: 'Not sure which battery fits? Send your old battery details or vehicle information for guidance.',
-    calculatorKicker: 'EMI ESTIMATE', calculatorTitle: 'Calculate an estimated monthly EMI',
-    calculatorCopy: 'Enter the battery price and the terms shared by Bajaj Finance to get an indicative estimate.',
-    calculatorNote: 'This is only an estimate. Final interest, fees, down payment, tenure and approval are confirmed by Bajaj Finance.',
-    priceLabel: 'Battery price (₹)', downPaymentLabel: 'Down payment (₹)', rateLabel: 'Annual interest rate (%)', tenureLabel: 'Tenure (months)',
-    calculatorCopy: 'Enter the battery price and the interest rate shared by Bajaj Finance to get an indicative EMI estimate with 0% down payment.',
-    calculatorNote: 'This estimate assumes ₹0 down payment. Interest, processing fee, eligibility, tenure and final terms must be confirmed with Bajaj Finance.',
-    downPaymentLabel: 'Down payment (fixed at ₹0)', rateLabel: 'Annual interest rate (%)',
-    calculateCta: 'Calculate EMI', calculatorResult: 'Enter the terms to see an estimate.',
     confirmEnquiry: 'Confirm on enquiry', personalAssistance: 'Personal assistance', askWhatsapp: 'Ask on WhatsApp'
 });
 Object.assign(translations.hi, {
@@ -104,11 +96,6 @@ Object.assign(translations.hi, {
     upsTitle: 'UPS और बैकअप बैटरियां', upsCopy: 'अपने UPS या उपकरण के लिए बैकअप बैटरी की आवश्यकता के बारे में पूछें।',
     commercialTitle: 'वाणिज्यिक वाहन बैटरियां', commercialCopy: 'पूछताछ के लिए अपने मालवाहक वाहन या व्यावसायिक उपयोग की जानकारी भेजें।',
     replacementTitle: 'बैटरी बदलने में सहायता', replacementCopy: 'कौन-सी बैटरी सही है, पता नहीं? पुरानी बैटरी या वाहन की जानकारी भेजें।',
-    calculatorKicker: 'EMI अनुमान', calculatorTitle: 'अनुमानित मासिक EMI की गणना करें',
-    calculatorCopy: 'अनुमान के लिए बैटरी की कीमत और Bajaj Finance द्वारा बताई गई शर्तें भरें।',
-    calculatorNote: 'यह केवल अनुमान है। अंतिम ब्याज, शुल्क, डाउन पेमेंट, अवधि और स्वीकृति Bajaj Finance तय करेगा।',
-    priceLabel: 'बैटरी की कीमत (₹)', downPaymentLabel: 'डाउन पेमेंट (₹)', rateLabel: 'वार्षिक ब्याज दर (%)', tenureLabel: 'अवधि (महीने)',
-    calculateCta: 'EMI की गणना करें', calculatorResult: 'अनुमान देखने के लिए शर्तें भरें।',
     confirmEnquiry: 'पूछताछ पर पुष्टि', personalAssistance: 'व्यक्तिगत सहायता', askWhatsapp: 'WhatsApp पर पूछें'
 });
 Object.assign(translations.mr, {
@@ -141,26 +128,7 @@ Object.assign(translations.mr, {
     upsTitle: 'UPS आणि बॅकअप बॅटरी', upsCopy: 'तुमच्या UPS किंवा उपकरणासाठी बॅकअप बॅटरीच्या गरजेबद्दल विचारा.',
     commercialTitle: 'व्यावसायिक वाहन बॅटरी', commercialCopy: 'चौकशीसाठी तुमच्या मालवाहू वाहनाची किंवा व्यावसायिक वापराची माहिती पाठवा.',
     replacementTitle: 'बॅटरी बदलण्यास मदत', replacementCopy: 'कोणती बॅटरी योग्य आहे हे कळत नाही? जुन्या बॅटरीची किंवा वाहनाची माहिती पाठवा.',
-    calculatorKicker: 'EMI अंदाज', calculatorTitle: 'अंदाजे मासिक EMI मोजा',
-    calculatorCopy: 'अंदाजासाठी बॅटरीची किंमत आणि Bajaj Finance ने सांगितलेल्या अटी भरा.',
-    calculatorNote: 'हा फक्त अंदाज आहे. अंतिम व्याज, शुल्क, डाउन पेमेंट, कालावधी आणि मंजुरी Bajaj Finance ठरवेल.',
-    priceLabel: 'बॅटरीची किंमत (₹)', downPaymentLabel: 'डाउन पेमेंट (₹)', rateLabel: 'वार्षिक व्याजदर (%)', tenureLabel: 'कालावधी (महिने)',
-    calculateCta: 'EMI मोजा', calculatorResult: 'अंदाज पाहण्यासाठी अटी भरा.',
     confirmEnquiry: 'चौकशीवर खात्री', personalAssistance: 'वैयक्तिक मदत', askWhatsapp: 'WhatsApp वर विचारा'
-});
-Object.assign(translations.hi, {
-    zeroInterestBadge: '0% DOWN PAYMENT EMI',
-    financeTitle: 'Buy your battery with 0% down payment',
-    financeCopy: 'Get a 0% down payment EMI option through Bajaj Finance, subject to eligibility and approved terms.',
-    conditionsTitle: 'Before choosing 0% down payment',
-    conditionNote: '0% down payment does not necessarily mean zero interest or zero processing charges. Eligibility and final terms are subject to Bajaj Finance approval.'
-});
-Object.assign(translations.mr, {
-    zeroInterestBadge: '0% DOWN PAYMENT EMI',
-    financeTitle: 'Buy your battery with 0% down payment',
-    financeCopy: 'Get a 0% down payment EMI option through Bajaj Finance, subject to eligibility and approved terms.',
-    conditionsTitle: 'Before choosing 0% down payment',
-    conditionNote: '0% down payment does not necessarily mean zero interest or zero processing charges. Eligibility and final terms are subject to Bajaj Finance approval.'
 });
 const setLanguage = (language) => {
     const copy = translations[language] || translations.en;
