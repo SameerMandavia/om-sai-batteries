@@ -45,6 +45,7 @@
         "name": "Om Sai Batteries",
         "description": "Battery enquiry shop for vehicle and home backup batteries in Kon Gaon, Bhiwandi.",
         "telephone": "+91 92708 01701",
+        "taxID": "27AIFPT8996B1ZN",
         "email": "omsaibatteries9000@gmail.com",
         "url": "https://om-sai-batteries.netlify.app/",
         "address": {
@@ -75,7 +76,7 @@
         >
         <nav class="navlinks" aria-label="Main navigation">
           <a href="#products">Products</a><a href="#help">How it works</a
-          ><a href="#contact">Contact</a>
+          ><a href="#enquiry">Enquire</a><a href="#contact">Contact</a>
         </nav>
         <a
           class="navcta"
@@ -176,16 +177,16 @@
         <div class="container finance-banner-inner">
           <div class="finance-icon" aria-hidden="true"><i data-lucide="credit-card" class="icon"></i></div>
           <div>
-            <div class="kicker">EASY PAYMENT OPTION</div>
-            <h2 id="finance-title">Buy your battery on EMI</h2>
-            <p>Ask us about purchasing your battery through Bajaj Finance. Convenient EMI options may be available, subject to eligibility and lender terms.</p>
+            <div class="kicker" data-i18n="financeKicker">EASY PAYMENT OPTION</div>
+            <h2 id="finance-title" data-i18n="financeTitle">Buy your battery on EMI</h2>
+            <p data-i18n="financeCopy">EMI is available through Bajaj Finance, subject to eligibility. Ask about down payment, tenure, processing fee and monthly EMI.</p>
             <div class="finance-points" aria-label="Bajaj Finance EMI details">
-              <span><i data-lucide="check-circle-2" class="icon"></i>Monthly instalments</span>
-              <span><i data-lucide="check-circle-2" class="icon"></i>Eligibility check at shop</span>
-              <span><i data-lucide="check-circle-2" class="icon"></i>Terms explained before purchase</span>
+              <span><i data-lucide="check-circle-2" class="icon"></i><span data-i18n="financePoint1">Monthly instalments</span></span>
+              <span><i data-lucide="check-circle-2" class="icon"></i><span data-i18n="financePoint2">Eligibility confirmation</span></span>
+              <span><i data-lucide="check-circle-2" class="icon"></i><span data-i18n="financePoint3">Terms explained before purchase</span></span>
             </div>
           </div>
-          <a class="btn primary finance-cta" href="https://wa.me/919270801701?text=Hello%20Om%20Sai%20Batteries%2C%20I%20want%20to%20buy%20a%20battery%20on%20EMI%20through%20Bajaj%20Finance." target="_blank" rel="noopener"><i data-lucide="message-circle" class="icon"></i>Ask about EMI</a>
+          <a class="btn primary finance-cta" href="https://wa.me/919270801701?text=Hello%20Om%20Sai%20Batteries%2C%20I%20want%20to%20get%20an%20EMI%20estimate%20for%20a%20battery%20through%20Bajaj%20Finance." target="_blank" rel="noopener"><i data-lucide="message-circle" class="icon"></i><span data-i18n="emiCta">Get EMI estimate on WhatsApp</span></a>
         </div>
       </section>
       <section class="brand-showcase" aria-labelledby="brands-title">
@@ -456,6 +457,30 @@
               <p>Share a photo of your old battery and get help identifying a suitable replacement.</p>
             </div>
           </div>
+        </div>
+      </section>
+      <section class="content enquiry-section" id="enquiry">
+        <div class="container enquiry-grid">
+          <div class="section-head enquiry-intro">
+            <div class="kicker" data-i18n="enquiryKicker">QUICK ENQUIRY</div>
+            <h2 data-i18n="enquiryTitle">Tell us what battery you need</h2>
+            <p data-i18n="enquiryCopy">Share a few details and we’ll send your enquiry to Om Sai Batteries on WhatsApp.</p>
+            <div class="language-switcher" role="group" aria-label="Choose language">
+              <span data-i18n="languageLabel">Language</span>
+              <button type="button" class="language-btn active" data-language="en">English</button>
+              <button type="button" class="language-btn" data-language="hi">हिन्दी</button>
+              <button type="button" class="language-btn" data-language="mr">मराठी</button>
+            </div>
+          </div>
+          <form class="enquiry-form" id="enquiry-form">
+            <label><span data-i18n="nameLabel">Customer name</span><input name="name" type="text" autocomplete="name" required data-placeholder="namePlaceholder" placeholder="Your name" /></label>
+            <label><span data-i18n="vehicleLabel">Vehicle make and model</span><input name="vehicle" type="text" placeholder="Example: Maruti Swift 2018" data-placeholder="vehiclePlaceholder" /></label>
+            <label><span data-i18n="batteryLabel">Existing battery details</span><textarea name="battery" rows="3" placeholder="Brand, model or a photo description" data-placeholder="batteryPlaceholder"></textarea></label>
+            <label><span data-i18n="phoneLabel">Phone number</span><input name="phone" type="tel" autocomplete="tel" required placeholder="Your phone number" data-placeholder="phonePlaceholder" /></label>
+            <label class="form-checkbox"><input name="emi" type="checkbox" /><span data-i18n="emiNeedLabel">I want an EMI option through Bajaj Finance</span></label>
+            <button class="btn primary" type="submit"><i data-lucide="send" class="icon"></i><span data-i18n="formCta">Send enquiry on WhatsApp</span></button>
+            <small data-i18n="formNote">We’ll confirm availability, pricing, GST billing and EMI terms before purchase.</small>
+          </form>
         </div>
       </section>
       <section class="content contact" id="contact">

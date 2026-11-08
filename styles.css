@@ -658,6 +658,93 @@ footer .container {
   border: 1px solid #f2d8ad;
   border-radius: 10px;
 }
+.enquiry-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 30px;
+  align-items: start;
+}
+.enquiry-intro {
+  text-align: left;
+  margin: 0;
+}
+.language-switcher {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 22px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+.language-btn {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--navy);
+  padding: 7px 12px;
+  font: inherit;
+  cursor: pointer;
+}
+.language-btn.active,
+.language-btn:hover {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: #fff;
+}
+.enquiry-form {
+  display: grid;
+  gap: 13px;
+  padding: 24px;
+  background: #f6f9fc;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+}
+.enquiry-form label:not(.form-checkbox) {
+  display: grid;
+  gap: 6px;
+  color: var(--navy);
+  font-size: 12px;
+  font-weight: 800;
+}
+.enquiry-form input:not([type="checkbox"]),
+.enquiry-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #d7e0e8;
+  border-radius: 10px;
+  background: #fff;
+  color: var(--ink);
+  padding: 11px 12px;
+  font: inherit;
+  font-size: 13px;
+}
+.enquiry-form textarea {
+  resize: vertical;
+}
+.enquiry-form input:focus,
+.enquiry-form textarea:focus {
+  outline: 3px solid rgba(22, 128, 71, 0.14);
+  border-color: #168047;
+}
+.form-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.45;
+}
+.form-checkbox input {
+  margin-top: 2px;
+  accent-color: #168047;
+}
+.enquiry-form small {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.45;
+}
 .mobilebar {
   display: none;
 }
@@ -679,6 +766,9 @@ footer .container {
   .finance-cta {
     grid-column: 1 / -1;
     justify-self: start;
+  }
+  .enquiry-grid {
+    grid-template-columns: 1fr;
   }
   .hero-art {
     min-height: 260px;
